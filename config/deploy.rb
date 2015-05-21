@@ -57,6 +57,6 @@ namespace :deploy do
   end
 
 
-  # after :published, :restart_thin
+  after :published, :restart_thin
 
 end
