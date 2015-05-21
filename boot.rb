@@ -1,5 +1,5 @@
   require "sinatra"
 
-  get '/' do
-      'Hello world!'
+  get '/verify_token' do
+    'nandor'
   end
