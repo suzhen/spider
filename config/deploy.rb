@@ -9,7 +9,7 @@ set :repo_url, 'https://github.com/suzhen/spider.git'
 set :branch,'master'
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/var/www/email_push'
+set :deploy_to, '/var/www/spider'
 
 set :bundle_flags, '--deployment'
 
@@ -33,7 +33,7 @@ set :bundle_binstubs, nil
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, fetch(:linked_files, []).push('config/database.yml')
+set :linked_files, fetch(:linked_files, []).push('config/database.yml','config/boot_app.yml')
 
 # Default value for linked_dirs is []
 # set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
